@@ -1,5 +1,9 @@
 [Saturday, 01/27/2018]
 Created code for a basic and rudimentary schedule generator.
+Started on: 10:00AM
+Ended on: 2:30PM
 
 [Monday, 1/29/2018]
 Set up the computer/laptop to be used in school. Did a clean install of Windows 10.
+Started on: 9:30AM
+Ended on: 4:20PM
