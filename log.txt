@@ -1,0 +1,5 @@
+[Saturday, 01/27/2018]
+Created code for a basic and rudimentary schedule generator.
+
+[Monday, 1/29/2018]
+Set up the computer/laptop to be used in school. Did a clean install of Windows 10.

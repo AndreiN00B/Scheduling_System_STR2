@@ -29,9 +29,9 @@ class schedule:
     def output_schedule(self):
         # outputs the schedule by printing it out
         s = ''
-        for i in range(9):
-            for j in range(5):
-                s += str(self.schedule[i][j]) + ', '
+        for i in self.schedule:
+            for j in i:
+                s += str(j) + ', '
             s += '\n'
         print(s)
 
