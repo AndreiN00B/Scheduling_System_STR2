@@ -20,11 +20,14 @@ class schedule:
 
     def gen_schedule(self, list_sub):
         # generates a randomized non-conflicting schedule
-        from random import randrange
-        for sub in list_sub:
-            _randomindex = str(self.free.pop(randrange(0, len(self.free))))
-            # gets a random index from the free array by popping it out
-            self.schedule[int(_randomindex[1])][int(_randomindex[0])] = sub
+        if len(list_sub) > len(self.free):
+            raise Exception("Too many subjects!")
+        else:
+            from random import randrange
+            for sub in list_sub:
+                _randomindex = str(self.free.pop(randrange(0, len(self.free))))
+                # gets a random index from the free array by popping it out
+                self.schedule[int(_randomindex[1])][int(_randomindex[0])] = sub
 
     def output_schedule(self):
         # outputs the schedule by printing it out
@@ -34,9 +37,3 @@ class schedule:
                 s += str(j) + ', '
             s += '\n'
         print(s)
-
-
-list_sub = ["Math", "Phys", "Biol", "Chem", "Engl", "Fili"]
-sched = schedule()
-sched.gen_schedule(list_sub)
-sched.output_schedule()
